@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 1000px;
+  margin: auto;
+  background-color: transparent;
+}
+
+.formleft, .beardmanright {
+  width: 50%;
+  height: 100%;
+  float: left;
+  position: relative;
+  text-align: center;
+}
+
+.formleft {
+  background-color: red;
+}
+
+.beardmanright {
+  background-color: transparent;
+}
+
+.beardman, .beardman2 {
+  width: 500px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.beardman {
+  z-index: -10;
+}
+
+#beard {
+  position: absolute;
+  top: 500px;
+  right: 85px;
+  width: 355px;
+  height: 100px;
+  z-index: -10;
+  background-color: black;
+  border-bottom-right-radius: 150px;
+  border-bottom-left-radius: 150px;
+  transition: height 1s linear;
+}
+
+#tape {
+  position: absolute;
+  top: 485px;
+  right: 0;
+  width: 50px;
+  height: 0px;
+  border: 1px solid black;
+  font-size: 30px;
+  text-align: center;
+  background-color: rgb(224, 217, 31);
+  transition: height 1s linear;
+}
+
+hr {
+  margin-top: 15px;
+  border: 1px solid black;
+}
+
+.modal {
+  position: absolute;
+  height: 40vh;
+  width: 40vw;
+  background-color: rgba(35, 111, 153, 0.9);
+  text-align: center;
+  top: 30vh;
+  left: 10vw;
+  font-size: 20px;
+}
+#modal1 {
+    z-index: 100;
+}
+
+#modal2 {
+  display: none;
+  position: static;
+  width: 100%;
+  margin-top: 20vh;
+}
+
+.modal h2 {
+  margin: 40px;
+}
+
+input {
+  width: 250px;
+  font-size: 20px;
+  text-align: center;
+}
+#lengthdisplay {
+  font-size: 40px;
+}

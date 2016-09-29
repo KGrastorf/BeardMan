@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Beard Man</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="formleft">
+        <div id="lengthdisplay">
+
+        </div>
+        <div class="modal" id="modal1">
+          <h2>What is your rate of beard growth in mm/day?</h2>
+            <input id="robg" type="text" placeholder="Rate of Beard Growth...">
+            <br>
+            <button type="button" onclick="beardGrowth = setup(document.getElementById('robg').value)">Submit</button>
+        </div>
+        <div class="modal" id="modal2">
+          <h1>Now enter how long you plan on growing that beautiful beard.</h1>
+            <input type="text" placeholder="Time of growth" id="time">
+            <button type="button" onclick="beardGrowth(document.getElementById('time').value)">Submit</button>
+        </div>
+
+
+      </div>
+      <div class="beardmanright">
+        <img src="beardman.png" class="beardman" />
+        <img src="beardman2.png" class="beardman2" />
+        <div id="beard"></div>
+        <div id="tape"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
